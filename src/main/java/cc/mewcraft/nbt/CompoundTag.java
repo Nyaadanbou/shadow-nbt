@@ -56,6 +56,9 @@ public interface CompoundTag extends Shadow, Tag {
             @Mapping(value = "put", version = NmsVersion.v1_20_R4),
             @Mapping(value = "a", version = NmsVersion.v1_20_R3)
     })
+    @ShadowingStrategy(
+            wrapper = NbtShadowingStrategy.ForShadowTags.class
+    )
     @Nullable Tag put(String key, Tag value);
 
     @ObfuscatedTarget({
