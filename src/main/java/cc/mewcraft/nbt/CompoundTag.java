@@ -25,16 +25,6 @@ public interface CompoundTag extends Shadow, Tag {
     }
 
     @ObfuscatedTarget({
-            @Mapping(value = "tags", version = NmsVersion.v1_20_R4),
-            @Mapping(value = "x", version = NmsVersion.v1_20_R3)
-    })
-    @ShadowingStrategy(
-            wrapper = NbtShadowingStrategy.ForTypelessMaps.class
-    )
-    @Field
-    Map<Object, Object> tags();
-
-    @ObfuscatedTarget({
             @Mapping(value = "getAllKeys", version = NmsVersion.v1_20_R4),
             @Mapping(value = "e", version = NmsVersion.v1_20_R3)
     })
@@ -277,4 +267,20 @@ public interface CompoundTag extends Shadow, Tag {
     })
     void merge(CompoundTag other);
 
+    @ObfuscatedTarget({
+            @Mapping(value = "tags", version = NmsVersion.v1_20_R4),
+            @Mapping(value = "x", version = NmsVersion.v1_20_R3)
+    })
+    @ShadowingStrategy(
+            wrapper = NbtShadowingStrategy.ForTypelessMaps.class
+    )
+    @Field
+    Map<Object, Object> tags();
+
+    /**
+     * 移除该复合标签里的所有标签.
+     */
+    default void clear() {
+        tags().clear();
+    }
 }
