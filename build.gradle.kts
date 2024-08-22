@@ -19,8 +19,6 @@ dependencies {
     // required in runtime
     api("cc.mewcraft", "shadow-bukkit", "1.20.6-SNAPSHOT")
     // already included in server
-    compileOnly("it.unimi.dsi:fastutil:8.5.13")
-    // already included in server
     compileOnly("org.checkerframework:checker-qual:3.44.0")
 
     testImplementation(platform("org.junit:junit-bom:5.10.2"))

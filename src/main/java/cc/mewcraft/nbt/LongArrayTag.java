@@ -1,7 +1,6 @@
 package cc.mewcraft.nbt;
 
 import cc.mewcraft.version.NmsVersion;
-import it.unimi.dsi.fastutil.longs.LongSet;
 import me.lucko.shadow.bukkit.BukkitShadowFactory;
 import me.lucko.shadow.bukkit.Mapping;
 import me.lucko.shadow.bukkit.NmsClassTarget;
@@ -17,10 +16,6 @@ public interface LongArrayTag extends CollectionTag<LongTag> {
 
 
     static LongArrayTag create(long[] data) {
-        return BukkitShadowFactory.global().constructShadow(LongArrayTag.class, (Object) data);
-    }
-
-    static LongArrayTag create(LongSet data) {
         return BukkitShadowFactory.global().constructShadow(LongArrayTag.class, (Object) data);
     }
 
