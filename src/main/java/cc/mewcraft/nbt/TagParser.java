@@ -14,6 +14,7 @@ import org.checkerframework.framework.qual.DefaultQualifier;
 public interface TagParser extends Shadow {
 
     @ObfuscatedTarget({
+            @Mapping(value = "parseTag", version = NmsVersion.v1_21_R1),
             @Mapping(value = "parseTag", version = NmsVersion.v1_20_R4),
             @Mapping(value = "a", version = NmsVersion.v1_20_R3)
     })

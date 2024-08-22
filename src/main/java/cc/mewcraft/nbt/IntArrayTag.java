@@ -25,6 +25,7 @@ public interface IntArrayTag extends CollectionTag<IntTag> {
     }
 
     @ObfuscatedTarget({
+            @Mapping(value = "getAsIntArray", version = NmsVersion.v1_21_R1),
             @Mapping(value = "getAsIntArray", version = NmsVersion.v1_20_R4),
             @Mapping(value = "g", version = NmsVersion.v1_20_R3)
     })

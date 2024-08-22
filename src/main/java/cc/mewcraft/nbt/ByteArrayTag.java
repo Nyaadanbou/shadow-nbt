@@ -24,6 +24,7 @@ public interface ByteArrayTag extends Shadow, CollectionTag<ByteTag> {
     }
 
     @ObfuscatedTarget({
+            @Mapping(value = "getAsByteArray", version = NmsVersion.v1_21_R1),
             @Mapping(value = "getAsByteArray", version = NmsVersion.v1_20_R4),
             @Mapping(value = "e", version = NmsVersion.v1_20_R3),
     })

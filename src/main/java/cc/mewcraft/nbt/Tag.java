@@ -17,12 +17,14 @@ import java.io.IOException;
 public interface Tag extends Shadow {
 
     @ObfuscatedTarget({
+            @Mapping(value = "write", version = NmsVersion.v1_21_R1),
             @Mapping(value = "write", version = NmsVersion.v1_20_R4),
             @Mapping(value = "a", version = NmsVersion.v1_20_R3)
     })
     void write(DataOutput dataOutput) throws IOException;
 
     @ObfuscatedTarget({
+            @Mapping(value = "getId", version = NmsVersion.v1_21_R1),
             @Mapping(value = "getId", version = NmsVersion.v1_20_R4),
             @Mapping(value = "b", version = NmsVersion.v1_20_R3)
     })
@@ -33,6 +35,7 @@ public interface Tag extends Shadow {
     }
 
     @ObfuscatedTarget({
+            @Mapping(value = "copy", version = NmsVersion.v1_21_R1),
             @Mapping(value = "copy", version = NmsVersion.v1_20_R4),
             @Mapping(value = "d", version = NmsVersion.v1_20_R3)
     })
@@ -42,6 +45,7 @@ public interface Tag extends Shadow {
     Tag copy();
 
     @ObfuscatedTarget({
+            @Mapping(value = "getAsString", version = NmsVersion.v1_21_R1),
             @Mapping(value = "getAsString", version = NmsVersion.v1_20_R4),
             @Mapping(value = "t_", version = NmsVersion.v1_20_R3)
     })

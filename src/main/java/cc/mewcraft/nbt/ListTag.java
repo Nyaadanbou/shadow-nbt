@@ -32,60 +32,70 @@ public interface ListTag extends Shadow, CollectionTag<Tag>, Iterable<Tag> {
     }
 
     @ObfuscatedTarget({
+            @Mapping(value = "getCompound", version = NmsVersion.v1_21_R1),
             @Mapping(value = "getCompound", version = NmsVersion.v1_20_R4),
             @Mapping(value = "a", version = NmsVersion.v1_20_R3)
     })
     CompoundTag getCompound(int index);
 
     @ObfuscatedTarget({
+            @Mapping(value = "getList", version = NmsVersion.v1_21_R1),
             @Mapping(value = "getList", version = NmsVersion.v1_20_R4),
             @Mapping(value = "b", version = NmsVersion.v1_20_R3)
     })
     ListTag getList(int index);
 
     @ObfuscatedTarget({
+            @Mapping(value = "getShort", version = NmsVersion.v1_21_R1),
             @Mapping(value = "getShort", version = NmsVersion.v1_20_R4),
             @Mapping(value = "d", version = NmsVersion.v1_20_R3)
     })
     short getShort(int index);
 
     @ObfuscatedTarget({
+            @Mapping(value = "getInt", version = NmsVersion.v1_21_R1),
             @Mapping(value = "getInt", version = NmsVersion.v1_20_R4),
             @Mapping(value = "e", version = NmsVersion.v1_20_R3)
     })
     int getInt(int index);
 
     @ObfuscatedTarget({
+            @Mapping(value = "getIntArray", version = NmsVersion.v1_21_R1),
             @Mapping(value = "getIntArray", version = NmsVersion.v1_20_R4),
             @Mapping(value = "f", version = NmsVersion.v1_20_R3)
     })
     int[] getIntArray(int index);
 
     @ObfuscatedTarget({
+            @Mapping(value = "getLongArray", version = NmsVersion.v1_21_R1),
             @Mapping(value = "getLongArray", version = NmsVersion.v1_20_R4),
             @Mapping(value = "g", version = NmsVersion.v1_20_R3)
     })
     long[] getLongArray(int index);
 
     @ObfuscatedTarget({
+            @Mapping(value = "getDouble", version = NmsVersion.v1_21_R1),
             @Mapping(value = "getDouble", version = NmsVersion.v1_20_R4),
             @Mapping(value = "h", version = NmsVersion.v1_20_R3)
     })
     double getDouble(int index);
 
     @ObfuscatedTarget({
+            @Mapping(value = "getFloat", version = NmsVersion.v1_21_R1),
             @Mapping(value = "getFloat", version = NmsVersion.v1_20_R4),
             @Mapping(value = "i", version = NmsVersion.v1_20_R3)
     })
     float getFloat(int index);
 
     @ObfuscatedTarget({
+            @Mapping(value = "getString", version = NmsVersion.v1_21_R1),
             @Mapping(value = "getString", version = NmsVersion.v1_20_R4),
             @Mapping(value = "j", version = NmsVersion.v1_20_R3)
     })
     String getString(int index);
 
     @ObfuscatedTarget({
+            @Mapping(value = "list", version = NmsVersion.v1_21_R1),
             @Mapping(value = "list", version = NmsVersion.v1_20_R4),
             @Mapping(value = "c", version = NmsVersion.v1_20_R3)
     })

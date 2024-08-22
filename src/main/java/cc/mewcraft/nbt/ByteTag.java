@@ -23,6 +23,7 @@ public interface ByteTag extends Shadow, NumberTag {
     }
 
     @ObfuscatedTarget({
+            @Mapping(value = "valueOf", version = NmsVersion.v1_21_R1),
             @Mapping(value = "valueOf", version = NmsVersion.v1_20_R4),
             @Mapping(value = "a", version = NmsVersion.v1_20_R3)
     })
@@ -30,6 +31,7 @@ public interface ByteTag extends Shadow, NumberTag {
     ByteTag byteValueOf(byte value);
 
     @ObfuscatedTarget({
+            @Mapping(value = "valueOf", version = NmsVersion.v1_21_R1),
             @Mapping(value = "valueOf", version = NmsVersion.v1_20_R4),
             @Mapping(value = "a", version = NmsVersion.v1_20_R3)
     })

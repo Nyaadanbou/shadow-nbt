@@ -18,6 +18,7 @@ import java.io.IOException;
 public interface NbtIO extends Shadow {
 
     @ObfuscatedTarget({
+            @Mapping(value = "read", version = NmsVersion.v1_21_R1),
             @Mapping(value = "read", version = NmsVersion.v1_20_R4),
             @Mapping(value = "a", version = NmsVersion.v1_20_R3),
     })
@@ -25,6 +26,7 @@ public interface NbtIO extends Shadow {
     CompoundTag read(DataInput input) throws IOException;
 
     @ObfuscatedTarget({
+            @Mapping(value = "write", version = NmsVersion.v1_21_R1),
             @Mapping(value = "write", version = NmsVersion.v1_20_R4),
             @Mapping(value = "a", version = NmsVersion.v1_20_R3),
     })

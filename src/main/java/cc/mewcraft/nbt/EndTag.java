@@ -21,6 +21,7 @@ public interface EndTag extends Shadow, Tag {
     }
 
     @ObfuscatedTarget({
+            @Mapping(value = "INSTANCE", version = NmsVersion.v1_21_R1),
             @Mapping(value = "INSTANCE", version = NmsVersion.v1_20_R4),
             @Mapping(value = "b", version = NmsVersion.v1_20_R3)
     })

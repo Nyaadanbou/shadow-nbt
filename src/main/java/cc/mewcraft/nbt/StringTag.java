@@ -19,6 +19,7 @@ public interface StringTag extends Shadow, Tag {
     }
 
     @ObfuscatedTarget({
+            @Mapping(value = "valueOf", version = NmsVersion.v1_21_R1),
             @Mapping(value = "valueOf", version = NmsVersion.v1_20_R4),
             @Mapping(value = "a", version = NmsVersion.v1_20_R3)
     })
@@ -26,6 +27,7 @@ public interface StringTag extends Shadow, Tag {
     StringTag stringValueOf(String value);
 
     @ObfuscatedTarget({
+            @Mapping(value = "getAsString", version = NmsVersion.v1_21_R1),
             @Mapping(value = "getAsString", version = NmsVersion.v1_20_R4),
             @Mapping(value = "t_", version = NmsVersion.v1_20_R3)
     })

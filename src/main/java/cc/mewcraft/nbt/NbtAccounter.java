@@ -14,6 +14,7 @@ import org.checkerframework.framework.qual.DefaultQualifier;
 public interface NbtAccounter extends Shadow {
 
     @ObfuscatedTarget({
+            @Mapping(value = "create", version = NmsVersion.v1_21_R1),
             @Mapping(value = "create", version = NmsVersion.v1_20_R4),
             @Mapping(value = "a", version = NmsVersion.v1_20_R3)
     })
@@ -21,6 +22,7 @@ public interface NbtAccounter extends Shadow {
     NbtAccounter create(long max);
 
     @ObfuscatedTarget({
+            @Mapping(value = "unlimitedHeap", version = NmsVersion.v1_21_R1),
             @Mapping(value = "unlimitedHeap", version = NmsVersion.v1_20_R4),
             @Mapping(value = "a", version = NmsVersion.v1_20_R3)
     })
