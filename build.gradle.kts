@@ -8,7 +8,6 @@ version = "1.21.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
-
     maven {
         name = "nyaadanbou"
         url = uri("https://repo.mewcraft.cc/releases/")
@@ -30,13 +29,12 @@ publishing {
         maven {
             name = "nyaadanbou"
             url = uri("https://repo.mewcraft.cc/releases/")
-            credentials(PasswordCredentials::class)
-            authentication {
-                create<BasicAuthentication>("basic")
+            credentials {
+                username = providers.gradleProperty("nyaadanbou.mavenUsername").orNull
+                password = providers.gradleProperty("nyaadanbou.mavenPassword").orNull
             }
         }
     }
-
     publications {
         create<MavenPublication>("maven") {
             from(components["java"])
