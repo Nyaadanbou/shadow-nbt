@@ -302,7 +302,7 @@ public interface CompoundTag extends Shadow, Tag {
             @Mapping(value = "merge", version = NmsVersion.v1_20_R4),
             @Mapping(value = "a", version = NmsVersion.v1_20_R3)
     })
-    void merge(CompoundTag other);
+    CompoundTag merge(CompoundTag other);
 
     @ObfuscatedTarget({
             @Mapping(value = "tags", version = NmsVersion.v1_21_R1),
