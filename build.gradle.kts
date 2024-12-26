@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "cc.mewcraft"
-version = "1.21.1-SNAPSHOT"
+version = "1.21.3-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     // required in runtime
-    api("cc.mewcraft", "shadow-bukkit", "1.21.1-SNAPSHOT")
+    api("cc.mewcraft", "shadow-bukkit", "1.21.3-SNAPSHOT")
     // already included in server
     compileOnly("org.checkerframework:checker-qual:3.44.0")
 
